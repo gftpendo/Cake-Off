@@ -1,6 +1,10 @@
-<html>
+
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fantastic Flatiron Cake Off</title>
     <link
       href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:400,600&display=swap"
@@ -13,41 +17,29 @@
     <header>
       <h1>Fantastic Flatiron Cake Off</h1>
       <nav>
-        <ul id="cake-list">
-          <li>Cake Name</li>
-          <li>Another Cake Name</li>
-          <li>And Another Cake Name</li>
-        </ul>
+        <ul id="cake-list"></ul>
       </nav>
     </header>
 
     <main>
       <div class="cake-details">
-        <h2 id="cake-name">Cake Name Goes Here</h2>
-        <img
-          id="cake-image"
-          alt="Cake Name Goes Here"
-          src="assets/image-placeholder.jpg"
-        />
-        <p>
-          <em id="cake-description">Cake Description Goes Here</em>
-        </p>
-
-        <form id="description-form">
-          <label for="description">Edited Description:</label>
-          <textarea id="description"></textarea>
-          <button type="submit">Update Cake</button>
-        </form>
+        <h2 id="cake-name">Loading...</h2>
+        <img id="cake-image" alt="Cake Image" src="assets/image-placeholder.jpg" />
+        <p><em id="cake-description">Loading...</em></p>
 
         <h3>Customer Reviews</h3>
-        <ul id="review-list">
-          <li>Replace with actual reviews</li>
-          <li>From the server</li>
-        </ul>
+        <ul id="review-list"></ul>
+
         <form id="review-form">
           <label for="review">Your Review:</label>
           <textarea id="review"></textarea>
           <button type="submit">Add review</button>
+        </form>
+
+        <form id="description-form">
+          <label for="description">Edit Cake Description:</label>
+          <textarea id="description"></textarea>
+          <button type="submit">Update Cake</button>
         </form>
       </div>
     </main>
